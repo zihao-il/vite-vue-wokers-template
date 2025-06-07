@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "worker",
+  "name": "vite-vue-template",
   "main": "./src/worker/index.ts",
   "compatibility_date": "2025-05-25",
   "compatibility_flags": ["nodejs_compat"],
