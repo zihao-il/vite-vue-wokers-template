@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "worker",
+  "main": "./src/worker/index.ts",
+  "compatibility_date": "2025-05-25",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+//  "d1_databases": [
+//    {
+//      "binding": "DB",
+//      "database_id": "",
+//      "database_name": ""
+//    }
+//  ],
+  "assets": {
+    "not_found_handling": "single-page-application"
+  }
+}

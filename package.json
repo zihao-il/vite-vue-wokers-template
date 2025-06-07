@@ -1,0 +1,30 @@
+{
+  "name": "vite-vue-template",
+  "version": "1.0.0",
+  "description": "A template for building a Vue application with Vite, Hono, and Cloudflare Workers",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "deploy": "pnpm run build && wrangler deploy",
+    "dev": "vite",
+    "lint": "eslint .",
+    "preview": "pnpm build && vite preview",
+    "types": "wrangler types"
+  },
+  "keywords": [],
+  "author": "zihao_il",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.1",
+  "dependencies": {
+    "hono": "^4.7.11"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.5.0",
+    "@cloudflare/workers-types": "^4.20250606.0",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vue": "^3.5.16",
+    "wrangler": "^4.19.1"
+  },
+  "type": "module"
+}
